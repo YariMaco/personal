@@ -5,9 +5,9 @@ export default function App() {
   return (
     <>
     <div className="flex flex-col gap-5 w-full">
-      <section className="grid grid-cols-1 h-screen gap-4 transition-all lg:grid-cols-10">
-          <div className="col-span-7">
-          <div className="flex flex-col justify-around pl-6">
+      <section className="grid grid-cols-1 h-screen transition-all lg:grid-cols-10">
+          <div className="col-span-7 mx-auto">
+          <div className="flex flex-col justify-around">
             <div className="flex flex-col mb-3">
               <h1 className="font-semibold pt-4" style={{ fontSize: "28px" }}>Menú</h1>
               <div className="py-4 bg-white rounded-md ">
@@ -18,12 +18,10 @@ export default function App() {
                   <li className="font-semibold  p-2 hover:bg-yellow-100 hover:border-2 border-custom-yellow rounded ">Pollos</li>
                   <li className="font-semibold  p-2 hover:bg-yellow-100 hover:border-2 border-custom-yellow rounded ">Otros</li>
               </ul>
-
               </div>
-
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 items-stretch sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <CartaComida/>
               <CartaComida/>
               <CartaComida/>
