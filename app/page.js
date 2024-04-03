@@ -1,26 +1,80 @@
-import { LayoutDashboard, Home, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
 import Sidebar, { SidebarItem } from "./components/Sidebar"
+import CartaComida from "./components/cartaComida";
+import Orden from "./components/orden";
 
 function App() {
-
   return (
     <>
-      <div className="flex">
-        <Sidebar>
-          <SidebarItem icon={<Home size={20} />} text="POS" alert />
-          <SidebarItem icon={<LayoutDashboard size={20} />} text="Inventario" active />
-          <SidebarItem icon={<StickyNote size={20} />} text="Reportes" alert />
-          <SidebarItem icon={<Calendar size={20} />} text="Empleados" />
-          <SidebarItem icon={<Layers size={20} />} text="Tasks" />
-          <SidebarItem icon={<Flag size={20} />} text="Reporting" />
-          <hr className="my-3" />
-          <SidebarItem icon={<Settings size={20} />} text="Settings" />
-          <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
-        </Sidebar>
-        <p>Si quieren ver el login es "http://localhost:3000/login" no lo subí al main porque mi vs estaba raro </p>
+    <div className="flex flex-col gap-5 w-full">
+      <section className="grid grid-cols-1 h-screen gap-4 transition-all lg:grid-cols-10">
+          <div className="col-span-7">
+          <div class="flex flex-col justify-around pl-6">
+            <div>
+            <h1 className="font-semibold pt-4" style={{ fontSize: "28px" }}>Menú</h1>
+            
+
+            </div>
+
+
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <CartaComida/>
+              <CartaComida/>
+              <CartaComida/>
+              <CartaComida/>
+              <CartaComida/>
+              <CartaComida/>
+              <CartaComida/>
+
+              <CartaComida/>
+
+
+            </div>
+
+
+          </div>
+
+          </div>
+          <div className="flex flex-col h-full  border-l shadow-sm bg-white col-span-3 ">
+            <h2 className="font-semibold pt-4 pl-4" style={{ fontSize: "22px" }}>Orden actual</h2>
+            <div className="flex flex-col h-full  border-l shadow-sm col-span-2 justify-between">
+
+            <Orden/>
+            <div className="" style={{ backgroundColor: '#f1f1f1' }}>
+              <div className="px-8 pt-8">
+                <div className=" flex justify-between pb-3">
+                  <h3>Subtotal</h3>
+                  <p>₡2500</p>
+                </div>
+                <div className=" flex dashed-border justify-between pb-3">
+                  <h3>Impuesto(10%)</h3>
+                  <p>₡500</p>
+                </div>
+                <div className="flex justify-between pb-3">
+                  <h3>Total</h3>
+                  <p>₡3000</p>
+                </div>
+            </div>  
+            <div className='flex flex-col pb-8 mt-4 px-12'>    
+                         <button className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 rounded-xl text-white font-bold text-lg'style={{ backgroundColor: '#09AA29' }}>Cancelar Pago</button>
+                   
+            </div>
+
+
+
+            </div>
+              
+              </div>
+              
+
+          
+          </div>
+
+        </section>
+        
+         
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

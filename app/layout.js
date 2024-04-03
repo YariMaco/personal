@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./components/Sidebar";
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
@@ -11,8 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={roboto.className}>        
+          <main className="flex">
+          <Sidebar/>
           {children}
+
+          </main>
 
         </body>
     </html>

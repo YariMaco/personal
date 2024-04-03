@@ -36,7 +36,7 @@ export default function login(){
         </div>
         <div className="hidden items-center justify-center w-1/2 lg:flex h-full"style={{ backgroundColor: '#FEA81D' }}>
             <div>
-            <Image src={'/petote.png'}  width={400} height={400}objectFit={'contain'} alt={'petote'} />
+            <Image src={'/petote.png'}  width={400} height={400} objectFit={'contain'} alt={'petote'} />
 
             </div>
         </div>
