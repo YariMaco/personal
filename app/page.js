@@ -1,17 +1,10 @@
-import CartaComida from "./components/cartaComida";
-import Orden from "./components/orden";
+import Image from "next/image";
 
-function App() {
-  return (
-    <>
-    <div className="flex flex-col gap-5 w-full">
-      /menu
-      y /login, necesito quitar algo del layout
+export default function login(){
+    return(
+    <div className="flex w-full h-screen">
+        hola
+    </div>
+    );
 
-         
-      </div>
-    </>
-  );
 }
-
-export default App;

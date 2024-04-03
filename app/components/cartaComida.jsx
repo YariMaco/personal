@@ -8,7 +8,7 @@ export default function CartaComida() {
           alt=""
           className="w-auto h-40  hover:scale-110 cursor-grab transition-all duration-500 ease-in-out "
         />
-          <h2>Pollo Frito</h2>
+        <h2>Pollo Frito</h2>
         <p className="text-sm font-normal">Pollo frito askdojnai foam djf os fpasdfe rfsif</p>
         <div className="flex justify-between ">
         <span className="text-yellow-600 ">₡1000</span>
