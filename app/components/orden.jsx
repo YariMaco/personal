@@ -13,11 +13,11 @@ export default function Orden() {
                 </div>
                 <div className="flex flex-col ">
                     <div className="pb-2" >
-                            <button className="bg-custom-yellow px-2 rounded-lg text-white ">-</button>
+                            <button className="bg-custom-yellow  hover:bg-yellow-600  px-2 rounded-lg text-white ">-</button>
                                 <span className="px-2">
                                     02
                                 </span>
-                                <button className="bg-custom-yellow px-2 rounded-lg text-white">+</button>
+                                <button className="bg-custom-yellow  hover:bg-yellow-600  px-2 rounded-lg text-white">+</button>
                         </div>
                         <div className="grow font-bold text-yellow-800">Remover</div>
 
@@ -33,13 +33,13 @@ export default function Orden() {
                    </div>
                     <div className="grow pb-3">₡1000</div>
                 </div>
-                                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start">
                     <div className="pb-2">
-                        <button className="bg-custom-yellow px-2 rounded-lg text-white">-</button>
+                        <button className=" bg-custom-yellow hover:bg-yellow-600 px-2 rounded-lg text-white">-</button>
                         <span className="px-2">
                             01
                         </span>
-                        <button className="bg-custom-yellow px-2 rounded-lg text-white">+</button>
+                        <button className=" bg-custom-yellow hover:bg-yellow-600 px-2 rounded-lg text-white">+</button>
                     </div>
                     <div className="grow font-bold text-yellow-800">Remover</div>
                 </div>

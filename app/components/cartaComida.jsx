@@ -2,7 +2,7 @@
 
 export default function CartaComida() {  
     return (
-      <div className="font-bold w-[200px] bg-white p-5 flex flex-col rounded-lg ">
+      <div className="font-bold w-[200px] bg-white p-4 flex flex-col rounded-lg ">
         <img
            src="/frito.png" 
           alt=""
